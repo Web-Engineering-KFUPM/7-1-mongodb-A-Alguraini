@@ -105,8 +105,9 @@
  * =====================================================
  *  - Go to cluster click on connect and select MongoDB for VS code
  *  - Copy the connection string.
- *       Example connection string: mongodb+srv://mjwdmufti:<db_password>@cluster0.wwsbvm7.mongodb.net
+ *       Example connection string: mongodb+srv://user:userpass@cluster0.wwsbvm7.mongodb.net
  *  - write your database password in place of <db_password> in the connection string.
+ * 
  *  - Run server: node server.js to test connection.
  * 
  * =====================================================
@@ -170,6 +171,10 @@
 import mongoose from "mongoose";
 
 // establish connection
+const connectionString = "mongodb+srv://user:userpass@cluster0.p5ayluy.mongodb.net/";
+mongoose.connect(connectionString)
+  .then(() => console.log("✅ MongoDB Connection Successful!"))
+  .catch(err => console.error("❌ MongoDB Connection Error:", err));
 
 
 // define schema
