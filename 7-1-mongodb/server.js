@@ -171,7 +171,7 @@
 import mongoose from "mongoose";
 
 // establish connection
-const connectionString = "mongodb+srv://user:userpass@cluster0.p5ayluy.mongodb.net/";
+const connectionString = "mongodb+srv://user:useerpass@cluster0.p5ayluy.mongodb.net/";
 mongoose.connect(connectionString)
   .then(() => console.log("✅ MongoDB Connection Successful!"))
   .catch(err => console.error("❌ MongoDB Connection Error:", err));
