@@ -194,7 +194,7 @@ async function createStudents() {
   ]);
   console.log("✅ Inserted");
 }
-// createStudents(); // Only run this once to create the initial data
+ createStudents(); 
 
 
 // read document
