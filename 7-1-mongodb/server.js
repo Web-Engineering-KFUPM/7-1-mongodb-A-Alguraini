@@ -194,11 +194,14 @@ async function createStudents() {
   ]);
   console.log("✅ Inserted");
 }
- createStudents(); 
 
 
 // read document
-
+async function readStudents() {
+  const all = await Student.find();
+  console.log("📚 All Students:", all);
+}
+readStudents();
 
 // update document
 
